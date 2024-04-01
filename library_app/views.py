@@ -50,11 +50,3 @@ class TransactionsViewSet(viewsets.ModelViewSet):
     filter_backends=(filters.SearchFilter,) 
     search_field=('user',)    
 
-"""class RecipeViewset(viewsets.ModelViewSet):
-    queryset=Recipe.objects.select_related('category').all()
-    serializer_class=RecipeSerializer
-    pagination_class=PageNumberPagination
-    filter_backends=(filters.SearchFilter,filter.DjangoFilterBackend,)
-    filterset_class= RecipeFilter
-    search_fields=('name',)
-    permission_classes=(IsAuthenticatedOrReadOnly,)"""
